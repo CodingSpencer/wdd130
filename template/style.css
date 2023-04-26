@@ -1,0 +1,40 @@
+body {
+    background-color: cornflowerblue;
+    margin:0;
+}
+
+h1 {
+    background-color: thistle;
+    padding:10px 20px;
+    margin:20px;
+    border: 5px solid white;
+    border-radius:20px;
+    color: white;
+    text-align: center;
+}
+
+#smaller {
+    font-size: 1.3em;
+    background-color: #F5DDDD;
+    width: 50%;
+    max-width:500px;
+    margin: 0 auto;
+}
+
+.highlight {
+    background-color: #00b4d8;;
+    padding: 5px;
+    color: black;
+    width: 500px;
+    margin:0 auto;
+}
+
+h2 {
+    padding: 20px;
+    border-radius: 15px;
+    background-color: orange;
+}
+
+.purple {
+    background-color: purple;
+}
