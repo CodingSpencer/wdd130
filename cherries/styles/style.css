@@ -1,0 +1,48 @@
+#div1 {
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+}    
+#div2 {
+    background-color: gainsboro;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    height: 690px;
+    width: 655px;
+}
+#div3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    align-self: center;
+    font-size: 10em;
+    font-family: "Georgia", 'Times New Roman', "Times", "serif";
+    color: black;
+    margin-top: -73%;
+    letter-spacing: 1.25rem;
+}
+#word {
+    font-family: "Georgia", "Times New Roman", "Times", "serif";
+    color: darkred;
+    text-align: center;
+    margin-top: 450px;
+    font-size: 3em;
+    letter-spacing: 1.25rem;
+}
+main {
+    display: grid;
+    grid-template-columns: auto auto;
+    place-items: center;
+    height: 690px;
+    width: 1290px;
+    gap: 10px;
+}
+#cherry {
+    align-items: center;
+}
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
