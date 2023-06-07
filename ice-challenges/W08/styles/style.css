@@ -1,0 +1,42 @@
+#picute {
+    grid-column: 1/2;
+    width: 300px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.popup{
+    grid-column: 2/3;
+    background: white;
+
+}
+
+.content {
+    align-items: center;
+}
+
+.title {
+    justify-self: center;
+    font
+}
+
+.subtitle {
+
+}
+
+.Exit {
+    position: absolute;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+    right: 4px;
+    
+}
+
+.X {
+    width: 10px;
+    height: 10px;
+}
