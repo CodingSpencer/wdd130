@@ -1,42 +1,43 @@
 #picute {
-    grid-column: 1/2;
+    grid-column: 1;
     width: 300px;
 }
 
 body {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-column: 1fr 2fr;
+    max-width: 600px;
 }
 
 .popup{
-    grid-column: 2/3;
+    grid-column: 2;
+    
     background: white;
 
 }
 
 .content {
     align-items: center;
+    display: grid;
+    grid-template-rows: 1.25fr 1fr .5fr .5fr .5fr .5fr;
+    width: 500px;
+    height: 500px;
 }
 
 .title {
     justify-self: center;
-    font
-}
+    grid-row: 1;
 
-.subtitle {
-
-}
-
-.Exit {
-    position: absolute;
-    top: 4px;
-    width: 10px;
-    height: 10px;
-    right: 4px;
     
 }
 
+.subtitle {
+    grid-row: 2;
+}
+
 .X {
+    grid-row: 1;
     width: 10px;
     height: 10px;
+    margin-top: -10%;
 }
