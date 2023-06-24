@@ -1,0 +1,51 @@
+body{
+    background-color: navy;
+    font-family: "Kaushan Script", "Pacifico", "Tahoma";
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: maroon;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+nav a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 35px;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a:hover{
+    background-color: white;
+    color: black;
+}
+
+.logo{
+    width: 120px;
+}
+
+
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
