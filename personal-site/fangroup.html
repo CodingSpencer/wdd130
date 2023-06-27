@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        #feedback {
+            background-color: antiquewhite;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: .5em;
+            display: none;      
+        }
+        .moveDown {
+            margin-top: 3em;
+        }
+
+        form {
+            margin: 0 auto;
+            width: 400px;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 1em;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        form li + li {
+            margin-top: 1em;
+        }
+        
+        label {
+            display: inline-block;
+            width: 90px;
+            text-align: right;
+        }
+        
+        input,
+        textarea {
+            font: 1em sans-serif;
+        
+            width: 300px;
+            box-sizing: border-box;
+        
+            border: 1px solid #999;
+        }
+        
+        input:focus,
+        textarea:focus {
+            border-color: #000;
+        }
+        
+        textarea {
+            vertical-align: top;
+        
+            height: 5em;
+        }
+        
+        .button {
+            padding-left: 90px;
+        }
+        
+        button {
+            margin-left: 0.5em;
+        }
+
+  
+    </style>
+    <title>Fan-Group</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" id="logo_link">
+            <img src="images/First Avenger Fanpage-logos_white.png" alt="FA Logo" class="logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="merch.html">Merch</a>
+            <a href="fangroup.html">Fangroup</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container1">
+            <img class="figure" src="images/minifigure.png" alt="figure">
+            <div id="feedback"></div>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                <li>
+                    <label for="name">First Name:</label>
+                    <input type="text" id="name" name="user_name" />
+                </li>
+                <li>
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="user_email" />
+                </li>
+                <li>
+                    <label for="msg">Short Message:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </li>
+                <li class="button">
+                    <button type="submit">Join Fangroup</button>
+                </li>
+                </ul>
+            </form>
+        </div>
+    <script>
+        const feedbackElement = document.getElementById('feedback');
+        const formElement = document.forms[0];
+        formElement.addEventListener('submit', function(e) {
+            e.preventDefault();
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            feedbackElement.style.display = "block";
+            document.body.classList.toggle('moveDown');
+        });
+    </script>  
+    </main>
+
+ 
+</body>
+</html>
