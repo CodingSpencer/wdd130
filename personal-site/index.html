@@ -24,22 +24,60 @@
         <div class="welcome"><b>Welcome to the First Avenger Fanpage</b></div>
     </div>
     <main>
-        <h2>Who is Steve Rogers?</h2>
-        <div class="box1">
-            <img class="costume" src="images/cap.png" alt="costume">
-            <p class="one">Steve Rogers was born to Joseph and Sarah Rogers, believe it or not, July 4, 1922. Both of his parents fought in the military and died while serving their country. This left Rogers to learn how to fend for himself with his best friend James "Bucky" Barnes. When the United States of America entered World War II in 1939, he was one of the first in line to enlist. Due to his health conditions he was denied and forced to watch those around join the fight. He is noticed sometime after by a German scientist who notices his good heart. Rogers volunteers to be part of a super soldier program. This would give an individual enhanced speed, strength, reactions, and more. Essentially making a perfect soldier. Rogers went under a procedure that gave him all the traits of a super soldier and the body of a greek god. Following this he helped the US military battle the Nazis across Europe. One mission ended up costing Rogers his best friend, Bucky, and was thrown into the Atlantic Ocean.</p>
-        </div>
-        
-        <h2>Why is Captain America awesome?</h2>
-        <div class="box2">
-            <img class="shiny" src="images/shiny_shield.png" alt="shiny_shield">
-            <p class="two">Steve Rogers aka. Captain America, is always looking out for the little guy and always fights for what he believes in. Whether its for his loved ones or for the freedom of those around him, he'll be "with them till the end of the line". In fact, Captain America is always willing to risk his own life to defend the ones of those around him. Even if that meant jumping on a grenade, crashing a plane, or giving up the love of his life. His fighting style is a combination of multiple different types of martial arts and he uses one of the most unique weapons in the Marvel universe. His shield brings hope to those living in fear and inspired the Strategic Homeland Intervention Enforcement Logistics Division (Shield). He's all the good parts of the American dream put into one individual. Freedom and liberty for all of mankind.</p>
-        </div>
+        <div class="sideTab">
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'info1')">Who is Steve Rogers?</button>
+                <button class="tablinks" onclick="openTab(event, 'info2')">Why is Captain America awesome?</button>
+                <button class="tablinks" onclick="openTab(event, 'info3')">What is the MCU?</button>
+            </div>
+            
+            <div id="info1" class="tabcontent">
+                <h3>Who is Steve Rogers?</h2>
+                <div class="box1">
+                    <img class="costume" src="images/cap.png" alt="costume">
+                    <p class="one">Steve Rogers was born to Joseph and Sarah Rogers, believe it or not, July 4, 1922. Both of his parents fought in the military and died while serving their country. This left Rogers to learn how to fend for himself with his best friend James "Bucky" Barnes. When the United States of America entered World War II in 1939, he was one of the first in line to enlist. Due to his health conditions he was denied and forced to watch those around join the fight. He is noticed sometime after by a German scientist who notices his good heart. Rogers volunteers to be part of a super soldier program. This would give an individual enhanced speed, strength, reactions, and more. Essentially making a perfect soldier. Rogers went under a procedure that gave him all the traits of a super soldier and the body of a greek god. Following this he helped the US military battle the Nazis across Europe. One mission ended up costing Rogers his best friend, Bucky, and was thrown into the Atlantic Ocean.</p>
+                </div>
+            </div>
 
-        <h2>What is the MCU?</h2>
-        <div class="box3">
-            <img class="watch" src="images/watch_shield.png" alt="watch">
-            <p class="three">In 2008, the movie <i>Ironman</i> with Robert Downey Jr. as Tony Stark was released. This movie began what is known as the Marvel Cinematic Universe. These were movies made wih characters from the Marvel comics. Actors include Chris Evans (Captain America), Scarlett Johansson (Black Widow), Chris Hemsworth (Thor), and Brie Larson (Captain Marvel). These actors allowed fans to see some of their favorite characters come to life on screen. In fact, Avengers Endgame was the highest grossing film of all time. These movies allowed for all types of fans to see their favorite heroes interact with the other Avengers.</p>
+            <div id="info2" class="tabcontent">
+                <h3>Why is Captain America awesome?</h2>
+                <div class="box2">
+                    <img class="shiny" src="images/shiny_shield.png" alt="shiny_shield">
+                    <p class="two">Steve Rogers aka. Captain America, is always looking out for the little guy and always fights for what he believes in. Whether its for his loved ones or for the freedom of those around him, he'll be "with them till the end of the line". In fact, Captain America is always willing to risk his own life to defend the ones of those around him. Even if that meant jumping on a grenade, crashing a plane, or giving up the love of his life. His fighting style is a combination of multiple different types of martial arts and he uses one of the most unique weapons in the Marvel universe. His shield brings hope to those living in fear and inspired the Strategic Homeland Intervention Enforcement Logistics Division (Shield). He's all the good parts of the American dream put into one individual. Freedom and liberty for all of mankind.</p>
+                </div>
+            </div>
+            
+            <div id="info3" class="tabcontent">
+                <h3>What is the MCU?</h2>
+                <div class="box3">
+                    <img class="watch" src="images/watch_shield.png" alt="watch">
+                    <p class="three">In 2008, the movie <i>Ironman</i> with Robert Downey Jr. as Tony Stark was released. This movie began what is known as the Marvel Cinematic Universe. These were movies made wih characters from the Marvel comics. Actors include Chris Evans (Captain America), Scarlett Johansson (Black Widow), Chris Hemsworth (Thor), and Brie Larson (Captain Marvel). These actors allowed fans to see some of their favorite characters come to life on screen. In fact, Avengers Endgame was the highest grossing film of all time. These movies allowed for all types of fans to see their favorite heroes interact with the other Avengers.</p>
+                </div>
+            </div>
+            <script>
+                function openTab(evt, question) {
+                    console.log("begin");
+                    // Declare all variables
+                    var i, tabcontent, tablinks;
+
+                    // Get all elements with class="tabcontent" and hide them
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+
+                    // Get all elements with class="tablinks" and remove the class "active"
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+
+                    // Show the current tab, and add an "active" class to the link that opened the tab
+                    document.getElementById(question).style.display = "block";
+                    evt.currentTarget.className += " active";
+                    console.log("here");
+                    }
+            </script>
         </div>
     </main>
     <footer>
