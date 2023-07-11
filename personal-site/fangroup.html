@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <style>
+        footer {
+            margin-top: 10px;
+        }
+
+        main {
+            place-items: center;
+        }
         #feedback {
             background-color: antiquewhite;
             position: absolute;
@@ -12,18 +19,20 @@
             left: 0;
             right: 0;
             padding: .5em;
-            display: none;      
+            display: none;
+            place-items: auto margin 0;      
         }
         .moveDown {
             margin-top: 3em;
         }
 
         form {
-            margin: 0 auto;
-            width: 400px;
+            color: white;
+            width: 100%;
             padding: 1em;
             border: 1px solid #ccc;
             border-radius: 1em;
+            align-items: left;
         }
         
         ul {
@@ -64,24 +73,143 @@
         }
         
         .button {
-            padding-left: 90px;
+            padding-left: 140px;
         }
         
         button {
             margin-left: 0.5em;
         }
+        
+        .white {
+            grid-column: 1;
+            grid-row: 3;
+            width: 100%;
+            margin: auto;
+        }
 
         .container1 {
-            display: grid;
-            grid-template-columns: 2fr 4fr 2fr;
-            grid-template-rows: 2fr 2fr;
+            grid-column: 2;
+            grid-row: 3;
+        }
+
+        .shield {
+            grid-column: 3;
+            grid-row: 3;
+            width: 60%;
+            margin: auto;
+        }
+
+        .box h1 {
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        .box h3 {
+            grid-column: 1/4;
+            grid-row: 2;
+            text-align: left;
+        }
+
+        h3 {
+            color: white;
+        }
+
+        ol {
+            color: white;
+            line-height: 2;
         }
 
         .box {
-            grid-column: 2;
-            grid-row: 2;
-            place-items: center;
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr;
+            grid-template-rows: 125px 125px 1fr;
         }
+
+        .movies {
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr;
+        }
+
+        .movies img {
+            width: 80%;
+        }
+
+        .desc {
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr;
+    
+        }
+
+        .one {
+            grid-column: 1;
+        }
+
+        .two {
+            grid-column: 2;
+        }
+
+        .three {
+            grid-column: 3;
+        }
+
+        .avenger {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        .avengers {
+            width: 1000px;
+            margin: auto;
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .avenger h4 {
+            grid-column: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .avenger h3 {
+            text-align: center;
+            color: white;
+        }
+
+        .movies img {
+            width: 80%;
+        }
+
+        .first {
+            grid-column: 1;
+            justify-self: center;
+        }
+
+        .second {
+            grid-column: 2;
+            justify-self: center;
+        }
+
+        .third {
+            grid-column: 3;
+            justify-self: center;
+        }
+
+        .desc h4 {
+            text-align: center;
+            color: white;
+        }
+
+        .desc h3 {
+            text-align: center;
+            color: white;
+        }
+
+        
 
   
     </style>
@@ -99,16 +227,12 @@
         </nav>
     </header>
     <main>
-        <div class="facts">
-            <h1>Fun Facts</h1>
-            <ul>
-                <li></li>
-            </ul>
-        </div>
         <div class="box">
             <h1>Join Our Fan-Group</h1>
-            <div class="container1">
-                <div id="feedback"></div>
+            <h3>Enter your email below to receive updates on news about Steve Rogers. Our fan-groups mission statement is to provide a healthy space to celebrate a united love of the first avenger. Anyone who loves Captain America is allowed in and hopefully we can be with each other "till the end of the line".</h3>
+        <img class="white" src="images/First Avenger Fanpage-logos_white.png" alt="">
+        <div class="container1">
+            <div id="feedback"></div>
                 <form action="/my-handling-form-page" method="post">
                     <ul>
                     <li>
@@ -138,6 +262,50 @@
                         document.body.classList.toggle('moveDown');
                     });
                 </script>  
+            </div>
+            <img class="shield" src="images/shield.png" alt="">
+        </div>
+        <div class="facts">
+            <h1>Fun Facts About Captain America</h1>
+            <ol>
+                <li>In the film, <i>Avengers Endgame</i>, Chris Evans had the most screentime as Captain America.</li>
+                <li><i>It's Been a Long, Long Time</i> by Kitty Kallen was played in two MCU films: <i>Captain America: The Winter Soldier and Avenger Endgame.</i></li>
+                <li>In <I>Captain America: Civil War</I>, Bucky admits that he remembers every action as the Winter Soldier to Ironman.</li>
+                <li>Chris Evans originally said no to the role of Steve Rogers.</li>
+                <li>Many fans believe the Captain America was able to hold Mjolnir in <i>Avengers Age of Ultron</i>, but did not to spare Thor's pride.</li>
+                <li>In <i>Avengers Infinity War</i>, Steve Rogers becomes the Captain, a new rogue hero that has deserted the US Government.</li>
+                <li>Steve Rogers shield is made of vibranium, a virtually indestructible metal, until it was broken by Thanos' atomantium weapon.</li>
+                <li>Steve was the only avenger who didn't return home when Ironman asks "Isn't that the mission? So we can end the fight? So we get to go home?"</li>
+                <li>Chris Evans had been in other movies with Scarlett Johansen before Marvel.</li>
+                <li>Captain America's full name is Steven Grant Rogers.</li>
+
+            </ol>
+        </div>
+        <div class="mcu">
+            <h1>MCU Films Including Chris Evans</h1>
+            <div class="movies">
+                <img class="first" src="images/first_avenger_1.png" alt="">
+                <img class="second" src="images/winter_soldier.jpg" alt="">
+                <img class="third" src="images/civil_war.jpg" alt="">                
+            </div>
+            <div class="desc">
+                <div class="one">
+                    <h3>Captain America: The First Avenger</h3>
+                    <h4>Steve Rogers, a skinny kid from Brooklyn, wants nothing more than to serve his country. He is recruited for a super soldier experiment after being noticed by a german scientist. The Red Skull leads a rogue Nazi science division that threatens to conquer the world named Hydra. As Steve Rogers becomes the first super soldier will he be able to save the world from Red Skull?</h4>
+                </div>
+                <div class="two">
+                    <h3>Captain America: The Winter Soldier</h3>
+                    <h4>Steve Rogers tries to find his place in a new world after waking up 70 years following WW2. He joins SHIELD to help protect and serve once again. However, secrets seem to dwell behind every corner and he doesn't know who to trust. And as a ghost reimurges from his past, Captain America has to choose whether to save an old friend or let an old foe rise to power.</h4>
+                </div>
+                <div class="three">
+                    <h3>Captain America: Civil War</h3>
+                    <h4>The Avengers survived a major attack by Ultron, but had a high casualty count in the country Sokovia. The world governments on pushing to have regulations placed on the Avengers to better maintain control. When Tony Stark and Steve Rogers disagree on this, the remaining members of the team are forced to pick sides. And when the Winter Soldier becomes involved, things begin to look as though they may not be as they seem.</h4>
+                </div>
+            </div>
+            <div class="avenger">
+                <img class="avengers" src="images/avengers.jpg" alt="">
+                <h3>Avengers 1-4</h3>
+                <h4>Even when Steve Rogers first became Captain America he always worked in a team. So obviously, when Nick J. Fury began to recruit earth's mightiest heroes onto a team Rogers made the list. All the different heroes are not the most compatible with each other, but if they can't get past their differences Earth might be destroyed. Can Rogers lead the Avengers to victory or will the Earth be lost due to their failure?</h4>
             </div>
         </div>
     </main>
