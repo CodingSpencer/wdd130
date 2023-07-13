@@ -1,3 +1,8 @@
+a img {
+    border-radius: 50%;
+    object-fit: fill;
+}
+
 body{
     background-color: navy;
     font-family: "Kaushan Script", "Pacifico", "Tahoma";
